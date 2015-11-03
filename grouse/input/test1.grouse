@@ -1,0 +1,13 @@
+main {
+
+	var ya := 50/(0-0);
+	imm x := 123;
+	//let z := true;
+	while(!true)
+	{
+		var ya := 1;
+		let ya:= ya -1;
+		print ya nl;
+	}
+	print ya;
+}

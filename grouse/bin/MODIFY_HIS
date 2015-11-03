@@ -1,0 +1,107 @@
+/*********Assignment1
+// Upper case 
+Add comment detection to lexicalAnalyzer.LexicalAnalyzer.java
+all phases passed...
+
+//comment
+Add CommentToken to tokens.CommentToken.java
+Add comment detection to lexicalAnalyzer.LexicalAnalyzer.java
+all phases passed...
+
+// new comparison punctuators
+Add new punctuators to lexicalAnalyzer.Punctuator.java
+Lexical passed...
+Add new signature to SemanticAnalyzer.FunctionSignature.java
+Add new expressions to Parse.java
+Add to ASMCodeGenerator.java
+Semantic passed...
+all phases passed...
+
+// implement all arithmetic operation:-, /
+输入>＝0已实现，输入<0还需实现
+输入<0已实现
+
+// implement ()
+Add new punctuators to lexicalAnalyzer.Punctuator.java
+Add new expressions to Parse.java
+all phases passed
+
+// float, subtract, divide 
+Add FloatToken.java to tokens
+Add FloatConstantNode.java to parseTree.nodeTypes
+Modify parseTree.ParseNodeVisitor.java
+Add to SemanticAnalyzerVisitors.java
+Add to Parse.java
+Modify FunctionSignature.java
+	now one operator supports various types of operands
+
+Add to PrimitiveType.java
+Add to Punctuator.java
+Modify ASMCodeGenerator.java to
+ 	support automatically change INT into FLOAT when finding F-operator type node
+all phases passed...
+
+// char, string comparion
+similar to float
+Semantic passed...
+print String all phases passed...
+Add to ASMCodeGenerator, char address store its ascii number
+char all phases passed....
+string all phases passed... OCT.24
+
+// fixed a bug of parenthesis
+BUG: close parenthesis must be end of an expression
+Fixed
+
+// let
+all phases passed..
+
+// cast NOT DONE
+Lexical analyze passed...
+Add CastOperatorNode.java
+
+// divide by zero NOT DONE
+
+/************Flow work (complete but not all necessary steps)
+Lexical
+0.  add keyword
+1. 	design token
+2. 	add new punctuator 
+3. 	try lexical analyze
+
+Parse 
+	only scan the text and transfer them into tokens (including punctuator, identifier, constant, operator, flow control sign)
+4.	design node
+5.	modify parse expression
+
+Semantic
+6.	design function signature
+7. 	modify parseNodeVisitor
+8.	modify SemanticAnalysisVisitor
+9. 	try Semantic Analyze 
+
+Generate code
+10. modify ASMCodeGenerator.java
+11. try Compile
+
+/*************Assignment2
+// boolean and | or | not
+Lexical Analyze passed....
+Add UnaryOperatorNode.java
+All phases passed...
+
+// flow control + scope
+a. if | while
+Lexial passed...
+Semantic passed...
+	scope seems to be ok
+	problem at the void code, solved
+All passed...
+
+b. for
+not implemented
+
+c. string concatenation
+
+
+
